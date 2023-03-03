@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField component renders the input field correctly 1`] = `
+<DocumentFragment>
+  <input
+    class="InputField"
+    id="username"
+    required=""
+    type="text"
+    value="test"
+  />
+</DocumentFragment>
+`;

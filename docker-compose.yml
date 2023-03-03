@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  frontend:
+    image: visi-one-frontend
+    build:
+      context: frontend
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+  backend:
+    image: visi-one-backend
+    build:
+      context: backend
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 9000:9000
