@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   frontend:
-    image: visi-one-frontend
+    image: bdt-frontend
     build:
       context: frontend
       dockerfile: ./Dockerfile
@@ -11,7 +11,7 @@ services:
     ports:
       - 3000:3000
   backend:
-    image: visi-one-backend
+    image: bdt-backend
     build:
       context: backend
       dockerfile: ./Dockerfile
